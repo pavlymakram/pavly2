@@ -2,5 +2,5 @@ module.exports = {
   outputDir: 'docs'
 };
 module.exports = {
-  publicPath: '/<pavly2>/'
+  publicPath: process.env.NODE_ENV === 'production' ? '/<pavly2>/' : '/'
 };
